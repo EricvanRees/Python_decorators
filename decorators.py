@@ -1,4 +1,10 @@
-# Decorators
+""" 
+Examples of closures, decorator functions, and decorator classes
+
+Closures: A closure is a function that "remembers" the variables of its surrounding scope (the outer function) even after the outer function has finished executing. This means the inner function can access and modify those variables as if they were part of its own scope. 
+
+Decorators use closures to create a wrapper function. This wrapper function takes the original function's arguments and calls the original function. 
+"""
 
 """ Example 1 of a closure
 def outer_function():
@@ -123,7 +129,7 @@ display()
 
 # Example 3: using classes as decorators
 
-class decorator_class(object):
+""" class decorator_class(object):
   
   def __init__(self, original_function):
     self.original_function = original_function
@@ -141,4 +147,4 @@ def display_info(name, age):
   print(f'display_info ran with arguments {name}, {age}')
   
 display_info('John', 25)
-display()
+display() """
